@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f6f3f6;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background: #c9e6d8;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+    border: 3px solid white;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.role {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.badge {
+    display: block;
+    margin: 10px auto 20px;
+    padding: 6px 14px;
+    background: #2ec4b6;
+    color: white;
+    width: fit-content;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.sidebar a {
+    color: #346;
+    text-decoration: none;
+}
+
+.sidebar h3 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+
+/* CONTENT */
+.content {
+    padding: 30px;
+    width: 70%;
+}
+
+.intro {
+    line-height: 1.7;
+}
+
+.value {
+    background: white;
+    padding: 20px;
+    border-left: 5px solid #0077b6;
+}
+
+.value-list {
+    list-style: none;
+    padding: 0;
+}
+
+.value-list li {
+    padding: 6px 0;
+}
+
+
+.publications li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.pubpub li{
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.cta {
+    background: #0077b6;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.cta-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background: white;
+    color: #0077b6;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar, .content {
+        width: 100%;
+    }
+}
+#welcome-banner {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0077b6;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    transition: opacity 0.6s ease;
+}
+
+
+
+#expertise {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+#expertise h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skills, .tools {
+  margin-bottom: 40px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.progress {
+  background: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: #1f7a8c;
+  color: #fff;
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.tools-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tools-list li {
+  background: #f5f7fa;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-left: 4px solid #1f388c;
+  border-radius: 6px;
+}
+
+.progress-bar {
+  width: 0;
+  transition: width 1.5s ease-in-out;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.tools-list li {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tools-list li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.reference {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.reference a {
+  color: red
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.reference a:hover {
+  text-decoration: underline;
+}
